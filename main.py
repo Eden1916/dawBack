@@ -22,7 +22,7 @@ app = FastAPI(
 # CORS — allow the React dev server and any deployed frontend
 allowed_origins = [
     os.getenv("FRONTEND_ORIGIN", "http://localhost:5173"),
-    "http://localhost:3000",
+    "http://localhost:3000","https://daw-delta.vercel.app/",
 ]
 
 app.add_middleware(
